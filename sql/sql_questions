@@ -1,0 +1,30 @@
+Level 4 — Subqueries (Q31–Q38)
+Query inside a query
+Q31. Find all employees whose salary is greater than the company average.
+Q32. Find the employee with the highest salary using a subquery.
+Q33. Find all employees who work in the same department as 'Alice Johnson'.
+Q34. Find departments whose total salary is above the average department total salary.
+Q35. Find employees whose salary is greater than the average salary of their own department using a correlated subquery.
+Q36. Find all employees who are not from the city with the most employees.
+Q37. Find the second highest salary in the company.
+Q38. Find employees who earn more than all employees in the HR department.
+
+🔴 Level 5 — Window Functions (Q39–Q45)
+RANK, DENSE_RANK, ROW_NUMBER, LAG, LEAD
+Q39. Rank all employees by salary in descending order using RANK().
+Q40. Rank employees within each department by salary using RANK().
+Q41. Get the top 2 employees per department by salary using DENSE_RANK().
+Q42. Add a column showing previous employee's salary using LAG() ordered by salary.
+Q43. Add a column showing next employee's salary using LEAD() ordered by salary.
+Q44. Find the difference between each employee's salary and the next highest salary using LEAD().
+Q45. Divide employees into 4 salary quartiles using NTILE(4).
+
+🔴 Level 6 — CTEs + Complex (Q46–50)
+WITH clause + combining everything
+Q46. Using a CTE, find the average salary per department, then find departments above company average.
+Q47. Using a CTE, find the top earning employee per department.
+Q48. Find the department with the highest total salary, and list all its employees with their % salary contribution to the dept total.
+Q49. Using multiple CTEs, find employees who are both: earning above their dept average AND ranked in the top 3 company-wide by salary.
+Q50. Write a query that shows for each employee: their name, dept, salary, dept average, company average, difference from dept avg, difference from company avg, and their rank within dept — all in a single query.
+
+
