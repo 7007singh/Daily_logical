@@ -8,3 +8,17 @@ for i in range(len(s)-1):
     print(s[i])
     break
 
+from collections import Counter
+
+
+def first_unique(s):
+    freq = Counter(s)
+
+    for i, ch in enumerate(s):
+        if freq[ch] == 1:
+            return ch
+
+    return -1
+s = "leetcode"
+print(first_unique(s))
+

@@ -153,5 +153,19 @@ def remove_duplicates(s):
 
 # Check if string is subsequence of another
 
-s = "abc"
-x = "alkdbsc"
+# s = "abc"
+# x = "alkdbsc"
+#
+# from functools import reduce
+# s = "sldkfj"
+# x = reduce(lambda x,y: y+x, s)
+# print(x)
+#
+# from collections import Counter
+#
+# def is_anagram(s, t):
+#     return Counter(s) == Counter(t)
+
+
+s = {}
+print(len(s))

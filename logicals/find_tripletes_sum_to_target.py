@@ -27,3 +27,15 @@ def find_triplets():
 
 
 find_triplets()
+
+
+def two_target_sum():
+    nums = [11, 2, 7, 11, 15]
+    target = 9
+    for i, v in enumerate(nums):
+        if v < target:
+            x = abs(target-v)
+            if x in nums:
+                return [nums.index(x), i]
+print(two_target_sum())
+
