@@ -1,3 +1,8 @@
+Q27. Find departments where the difference between max and min salary is greater than 30,000.
+Q28. Find departments where count of employees with NULL email is greater than 0.
+Q29. Find the average salary per city, only show cities where average is between 60,000 and 90,000.
+Q30. Find job titles that appear more than once, along with their count.
+
 Level 4 — Subqueries (Q31–Q38)
 Query inside a query
 Q31. Find all employees whose salary is greater than the company average.

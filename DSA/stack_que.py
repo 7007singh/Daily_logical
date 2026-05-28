@@ -27,7 +27,7 @@ def is_valid(s):
     return True if not stack else False
 
 
-print(is_valid("((()))"))
+print(is_valid("if (a[0] > b[1]) { doSomething(); }}"))
 
 # [0, 1, 2, 3, 0, 1, 6]
 

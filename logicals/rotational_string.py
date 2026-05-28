@@ -4,6 +4,6 @@ s = "abx"
 b = "xba"
 if len(s) != len(b):
     print(False)
-if s in s + b:
+if b in s + s:
     print(True)
 

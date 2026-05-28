@@ -45,7 +45,7 @@ def find_anagrams():
     for i in lst:
         sorted_i = "".join(sorted(i))
         if sorted_i not in output:
-            output[sorted_i]= [i]
+            output[sorted_i] = [i]
         else:
             output[sorted_i].append(i)
     for v in output.values():
@@ -55,4 +55,55 @@ def find_anagrams():
 
 
 find_anagrams()
+
+
+
+def che():
+    a = "listen"
+    b = "asldkf"
+    if len(a) != len(b):
+        return False
+    a_freq = {}
+    b_freq = {}
+    for i, j in zip(a,b):
+        if i in a_freq:
+            a_freq[i] = a_freq.get(i,0) + 1
+        else:
+
+            a_freq[i] = 1
+
+        if j in b_freq:
+            b_freq[j] = b_freq.get(j,0) + 1
+        else:
+
+            b_freq[j] = 1
+
+    return a_freq == b_freq
+
+print(che())
+
+
+
+def che():
+    a = "listen"
+    b = "asldkf"
+    if len(a) != len(b):
+        return False
+    count_dict = {}
+
+    for i in a:
+        count_dict[i] = count_dict.get(i,0) + 1
+
+    for j in b:
+        count_dict[j] = count_dict.get(j,0) - 1
+
+    for v in count_dict.values():
+        if v != 0:
+            return False
+    return True
+
+
+print(che())
+
+
 

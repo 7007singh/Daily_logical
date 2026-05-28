@@ -11,6 +11,7 @@ def maxArea():
         width = right - left
         curr = width * min(height[left], height[right])
 
+
         area = max(area, curr)
 
         if height[left] < height[right]:

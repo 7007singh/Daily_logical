@@ -46,7 +46,7 @@ while i < len(a):
 
 
 # remaining elements from b
-while j < len(b):
+while j < len(b): 
     result.append(b[j])
     j += 1
 

@@ -1,5 +1,5 @@
 def findMin():
-    nums = [3, 4, 5, 1, 2]
+    nums = [3, 4, 5, 2]
     left = 0
     right = len(nums) - 1
 
