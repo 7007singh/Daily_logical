@@ -1,22 +1,19 @@
+def sub_string():
+    x = "alsdkjfajadldr"
+    l = 0
 
-def length_of_longest_substring():
-    s = "abcdcfshabecsdfa"
-    seen = set()
-    left = 0
-    max_len = 0
+    left = 1
+    right = 0
 
-    for right in range(len(s)):
-        while s[right] in seen:
-            seen.remove(s[left])
-            left += 1
-
-        seen.add(s[right])
-        max_len = max(max_len, right - left + 1)
-
-    return max_len
-
-length_of_longest_substring()
-        
+    while left < len(x):
+        if x[left] in x[right:left]:
+            right = left
+        a = left - right + 1
+        if a > l:
+            l = a
+        left += 1
+    return l
+print(sub_string())
 
 
 
