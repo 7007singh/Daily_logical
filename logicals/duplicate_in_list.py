@@ -1,5 +1,5 @@
 def find_duplicate_in_list():
-    x = [1,3,4,5,6,3,4,5]
+    x = [1,3,4,5,6,3,3,4,5]
     y = list(set(x))
     for item in y:
         if item in x:

@@ -1,3 +1,4 @@
+
 def target_sum():
     arr = [1, 2, 3, 4, 5, 3, 3, 2, 1, 3]
     target = 6

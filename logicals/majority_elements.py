@@ -10,4 +10,4 @@ def majority_element(nums):
 
     return candidate
 
-print(majority_element([1,2,3,4,3,2,1,4,3,2]))
+print(majority_element([1,2,3,4,3,2,1,4,3,2,2,2,2]))

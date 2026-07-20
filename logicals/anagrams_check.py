@@ -66,17 +66,17 @@ def che():
     a_freq = {}
     b_freq = {}
     for i, j in zip(a,b):
-        if i in a_freq:
-            a_freq[i] = a_freq.get(i,0) + 1
-        else:
+        # if i in a_freq:
+        a_freq[i] = a_freq.get(i,0) + 1
+        # else:
+        #
+        #     a_freq[i] = 1
 
-            a_freq[i] = 1
-
-        if j in b_freq:
-            b_freq[j] = b_freq.get(j,0) + 1
-        else:
-
-            b_freq[j] = 1
+        # if j in b_freq:
+        b_freq[j] = b_freq.get(j,0) + 1
+        # else:
+        #
+        #     b_freq[j] = 1
 
     return a_freq == b_freq
 

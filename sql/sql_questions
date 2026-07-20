@@ -1,3 +1,38 @@
+Level 1 — Basic SELECT (Q1–Q10)
+Just retrieving data, no aggregation yet
+Q1. Select all columns from the employees table.
+Q2. Select only name, dept, and salary from employees.
+Q3. Get all employees from the Sales department.
+Q4. Get all employees whose salary is greater than 70,000.
+Q5. Get all employees from Engineering with salary greater than 80,000.
+Q6. Get all employees whose email is NULL.
+Q7. Get all employees whose email is NOT NULL.
+Q8. Get all employees ordered by salary ascending.
+Q9. Get the top 5 highest paid employees.
+Q10. Get all distinct departments from the table.
+
+Level 2 — Aggregate Functions (Q11–Q20)
+COUNT, SUM, AVG, MIN, MAX
+Q11. Count the total number of employees.
+Q12. Find the total salary paid by the company.
+Q13. Find the average salary of all employees.
+Q14. Find the highest salary in the company.
+Q15. Find the lowest salary in the company.
+Q16. Count total employees per department.
+Q17. Find total salary per department.
+Q18. Find average salary per department.
+Q19. Find the highest salary per department.
+Q20. Find min and max salary per department in a single query
+
+
+Level 3 — GROUP BY + HAVING (Q21–Q30)
+Filtering aggregated results
+Q21. Find departments where total salary is greater than 300,000.
+Q22. Find departments where average salary is greater than 65,000.
+Q23. Find departments that have more than 3 employees.
+Q24. Find departments where the minimum salary is less than 55,000.
+Q25. Count the number of employees per city, only show cities with more than 1 employee.
+Q26. Find count of employees per job title, ordered by count descending.
 Q27. Find departments where the difference between max and min salary is greater than 30,000.
 Q28. Find departments where count of employees with NULL email is greater than 0.
 Q29. Find the average salary per city, only show cities where average is between 60,000 and 90,000.

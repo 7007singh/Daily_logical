@@ -21,15 +21,18 @@ print(return_target_indices())
 
 
 def twoSum():
-    nums = [5, 5, 8, 2, 4]
-    target = 10
+    nums = [2, 7, 11, 15]
+    target = 9
     seen = {}
+
     for i, num in enumerate(nums):
-        complete = target - num
-        if complete in seen:
-            return [seen[complete], i]
-        else:
-            seen[complete] = i
+
+        need = target - num
+
+        if need in seen:
+            return seen[need], i
+
+        seen[num] = i
 
 
 print(twoSum())
@@ -53,8 +56,7 @@ for i in x:
 
 print(r)
 
-
-nums = [1,2,3,4,5]
+nums = [1, 2, 3, 4, 5]
 target = 9
 
 result = []
@@ -72,7 +74,6 @@ for i in range(len(nums)):
         needed = remaining_target - nums[j]
 
         if needed in seen:
-
             triplet = (current, needed, nums[j])
 
             result.append(triplet)

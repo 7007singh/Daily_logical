@@ -17,20 +17,37 @@ s = "shwetasinghabcdefghijkl"
 # print(max(b, key=len))
 
 
-def length_of_longest_substring(s):
-    seen = set()
+# def length_of_longest_substring(s):
+#     seen = set()
+#     left = 0
+#     max_len = 0
+#
+#     for right in range(len(s)):
+#         while s[right] in seen:
+#             seen.remove(s[left])
+#             left += 1
+#
+#         seen.add(s[right])
+#         max_len = max(max_len, right - left + 1)
+#
+#     return max_len
+#
+#
+# length_of_longest_substring()
+
+
+def longest_sub_string():
+    s =  "pwwkew"
     left = 0
     max_len = 0
+    seen = set()
 
-    for right in range(len(s)):
-        while s[right] in seen:
+    for i in range(len(s)):
+        while s[i] in seen:
             seen.remove(s[left])
             left += 1
-
-        seen.add(s[right])
-        max_len = max(max_len, right - left + 1)
-
+        seen.add(s[i])
+        max_len = max(max_len, i - left + 1)
     return max_len
 
-
-length_of_longest_substring()
+print(longest_sub_string())
